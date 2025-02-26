@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuctionXpert – Your Trusted Online Auction Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>AuctionXpert</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Auctions</a></li>
+                    <li><a href="#">My Bids</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Bid, Win & Own Exclusive Items</h2>
+            <p>Join the best online auctions and grab amazing deals on unique collectibles.</p>
+            <a href="#auctions" class="btn">Start Bidding</a>
+        </div>
+    </section>
+
+    <main id="auctions">
+        <div class="container">
+            <h2>Current Auctions</h2>
+            <div class="auction-list" id="auction-list"></div>
+            
+            <div class="pagination">
+                <button id="prevPage" onclick="changePage(-1)">Previous</button>
+                <span id="pageIndicator">Page 1 of 3</span>
+                <button id="nextPage" onclick="changePage(1)">Next</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 E-Auction | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <audio id="click-sound" src="click.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
